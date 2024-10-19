@@ -1,0 +1,11 @@
+3c3
+<   "edad": 25,
+---
+>   "edad": 26,
+5,7c5,6
+<     "programar",
+<     "jugar videojuegos",
+<     "leer"
+---
+>     "leer",
+>     "programar"

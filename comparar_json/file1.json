@@ -1,0 +1,6 @@
+{
+    "nombre": "Diego",
+    "edad": 25,
+    "ciudad": "Madrid",
+    "hobbies": ["programar", "jugar videojuegos", "leer"]
+}
