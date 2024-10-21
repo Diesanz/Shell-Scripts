@@ -6,7 +6,7 @@ function g() {
     git add .
     git commit -m "$comentario"
 
-    if [ "$2" == "-p"]; then
+    if [ "$2" == "-p" ]; then
         git push -u origin main
     fi
 
