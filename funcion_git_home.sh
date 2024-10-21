@@ -10,7 +10,6 @@ function g() {
         git push -u origin main
     fi
     
-
 }
 
 # Llama a la función con un mensaje
