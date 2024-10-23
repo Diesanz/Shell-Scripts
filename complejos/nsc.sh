@@ -17,7 +17,7 @@ function nsc(){
     #!/bin/bash
     EOF
 
-    # Da permisos de ejecución al archivo
+    # Da permisos de ejecución al archivos
     chmod u+x "$name"
 
 }
