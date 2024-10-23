@@ -5,6 +5,8 @@ nombres=("Diego" "Ana" "Carlos")
 
 # Acceder a elementos del array
 echo "Primer nombre: ${nombres[0]}"
+echo "Segundo nombre: ${nombres[1]}"
+echo "Tercer nombre: ${nombres[2]}"
 
 # Añadir elementos
 nombres+=("Luis")

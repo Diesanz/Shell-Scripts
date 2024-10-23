@@ -27,3 +27,18 @@ case $opcion in
     c) echo "Opción C seleccionada";;
     *) echo "Opción no válida";;
 esac
+
+
+# Estructura select con lista de opciones
+echo "Seleccione una opción:"
+options=("Opción A" "Opción B" "Opción C")
+
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Opción A") echo "Opción A seleccionada"; break;;
+        "Opción B") echo "Opción B seleccionada"; break;;
+        "Opción C") echo "Opción C seleccionada"; break;;
+        *) echo "Opción no válida";;
+    esac
+done

@@ -23,3 +23,6 @@ cat script.sh | sort > script_ordenado.txt
 
 #Agregar salida sin sobreescribir
 echo "Salida agregada" >> salida.txt
+
+#Mostrar los archivos generados
+ls -l salida.txt script_ordenado.txt

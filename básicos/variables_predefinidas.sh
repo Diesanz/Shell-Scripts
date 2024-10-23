@@ -14,3 +14,22 @@ if [[ $? -eq 0 ]]; then
 else
     echo "El último comando falló"
 fi
+
+# Ejecutar un comando y capturar su salida
+salida=$(ls -l)
+echo "Salida del comando: $salida"
+
+
+# Ejecutar un comando y capturar su salida en un archivo
+ls -l > output.txt
+
+
+# Ejecutar un comando y capturar sus errores
+ls -l 2> error.txt
+
+# Ejecutar un comando y capturar su salida y errores en un archivo
+ls -l 2> error.txt 1> output.txt
+
+# Ejecutar un comando y obtener el código de salida
+codigo_salida=$?
+echo "Código de salida del comando: $codigo_salida"
