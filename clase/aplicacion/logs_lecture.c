@@ -69,10 +69,11 @@ int main(int argc, char **argv){
     }
 
     #ifdef SHOW_BYTES
+    #define HOUR 24
     // Mostrar bytes por hora
     printf("\nBytes por hora:\n");
     printf("---------------------\n");
-    for (int i = 0; i < 24; i++) {
+    for (int i = 0; i < HOUR; i++) {
         printf("Total Bytes en la hora %02d: %d\n", i, bytes_per_hour[i]);
     }
     #endif
