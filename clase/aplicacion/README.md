@@ -17,6 +17,10 @@ El propósito de este proyecto es implementar un sistema de compilación modular
 ## Instalación y Uso
 1. **Formato del Log**: Familiarízate con los formatos de log de **Apache Web Server** o **Internet Information Server** para entender correctamente los datos en cada línea del archivo.
 2. **Compilación**: Ejecuta `make` en la terminal para compilar el proyecto. El `Makefile` está configurado para recompilar solo los módulos necesarios.
+
+   - `make all`: Compila el proyecto con las opciones predeterminadas.
+   - `make show_bytes`:Compila el proyecto con la macro `SHOW_BYTES` activada.
+   - `make show_analysis`: Compila el proyecto con la macro `SHOW_ANALYSIS` activada.
 3. **Ejecución**: Una vez compilado, ejecuta el programa especificando el archivo de log para procesar y obtener las métricas.
 
 ## Funcionalidades de la Aplicación
