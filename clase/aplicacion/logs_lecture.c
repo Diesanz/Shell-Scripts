@@ -16,7 +16,6 @@ char **get_array_lines(FILE *fptr) {
     
     char buffer[MAX_LINE_LENGTH];
     int line_count = 0;
-    int lines = 1;
 
     while (fgets(buffer, sizeof(buffer), fptr) != NULL && line_count < MAX_LINES) {
         array_lines[line_count] = strdup(buffer); // Crea copia de buffer
