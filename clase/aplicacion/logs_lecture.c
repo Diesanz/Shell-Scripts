@@ -68,18 +68,22 @@ int main(int argc, char **argv){
         line_analysis(*linea, &head, bytes_per_hour);
     }
 
+    #ifdef SHOW_BYTES
     // Mostrar bytes por hora
     printf("\nBytes por hora:\n");
     printf("---------------------\n");
     for (int i = 0; i < 24; i++) {
         printf("Total Bytes en la hora %02d: %d\n", i, bytes_per_hour[i]);
     }
+    #endif
 
+    #ifdef SHOW_ANALYSIS
     //Mostrar resultados
     printf("\n================================\n");
     printf("Análisis de líneas");
     printf("\n================================\n");
     show_list(head);
+    #endif
 
     // Liberar memoria
     free_lines(lines);
