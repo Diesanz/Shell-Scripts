@@ -16,7 +16,7 @@ for usuario in $usuarios; do
     # Comprobar si el usuario tiene objetos asociados
     if [ -z "$objetos" ]; then
         # Si no se encuentran objetos, se imprime el nombre del usuario y se continúa con el siguiente
-        echo "Usuario: $usuario"
+        echo "Usuario: $usuario, no tiene nada"
         continue
     fi
 
